@@ -60,7 +60,7 @@ for row in rows:
     record = dict(zip(headers, row))
     print(f"sequence of dictionaries: \n {record}")
 
-# generators 
+# generators. they are weird and work on tuples but they save a lot of memory? 
 nums = [1,2,3,4,5]
 squares = (x*x for x in nums)
 squares 
@@ -83,9 +83,8 @@ def squares(nums):
 for n in squares(nums):
     print(n)
 
-
-
-
+s = ('GOOG',100,490.10)
+','.join(str(x) for x in s)
 
 
 

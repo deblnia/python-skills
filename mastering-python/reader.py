@@ -1,5 +1,6 @@
 import csv 
 import reader
+from sys import intern
 from typing import AnyStr, List 
 from collections import defaultdict
 
@@ -44,3 +45,7 @@ for s in portfolio:
 bus = read_csv_as_dicts('data/ctabus.csv', [str,str,str,int])
 len({ id(row['route']) for row in bus }) # id get the unique ones
 len({ row['route'] for row in bus }) 
+
+# use sys.intern to cache strings 
+rows = reader.read_csv_as_dicts('Data/ctabus.csv', [intern, intern, str, int])
+

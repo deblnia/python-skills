@@ -28,7 +28,7 @@ def read_csv_as_dicts(filename:AnyStr, coltypes:List[str])->dict:
         - a dictionary typecast according to coltypes 
     '''
     result = [] 
-    f = open('data/portfolio.csv')
+    f = open(filename)
     rows = csv.reader(f)
     headers = next(rows) # skipping headers
     for row in rows: 
@@ -36,6 +36,11 @@ def read_csv_as_dicts(filename:AnyStr, coltypes:List[str])->dict:
             result.append(record)
     return result
 
-portfolio = reader.read_csv_as_dicts('Data/portfolio.csv', [str,int,float])
+portfolio = read_csv_as_dicts('Data/portfolio.csv', [str,int,float])
 for s in portfolio:
     print(s)
+
+# 181 different routes, but 54K different strings? 
+bus = read_csv_as_dicts('data/ctabus.csv', [str,str,str,int])
+len({ id(row['route']) for row in bus }) # id get the unique ones
+len({ row['route'] for row in bus }) 

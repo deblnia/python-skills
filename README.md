@@ -13,3 +13,5 @@ We considered a few different resources:
 8. [Python Koans](https://github.com/gregmalcolm/python_koans)
 9. [Python the Hard Way](https://learnpythonthehardway.org/python3/)
 10. [Learning Python](https://openbookproject.net/thinkcs/python/english3e/)
+
+[This](https://wiki.python.org/moin/TimeComplexity) is also a useful resource for the run-time complexity of common Python operations. 

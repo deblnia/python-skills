@@ -15,4 +15,6 @@ We considered a few different resources:
 10. [Learning Python](https://openbookproject.net/thinkcs/python/english3e/)
 11. [Python Crash Course](https://khwarizmi.org/wp-content/uploads/2021/04/Eric_Matthes_Python_Crash_Course_A_Hands.pdf)
 
-[This](https://wiki.python.org/moin/TimeComplexity) is also a useful resource for the run-time complexity of common Python operations. 
+Missc References: 
+- [This](https://wiki.python.org/moin/TimeComplexity) is also a useful resource for the run-time complexity of common Python operations. 
+- [This](https://github.com/faif/python-patterns) is a nice list of Python design patterns and idioms. 

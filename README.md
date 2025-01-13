@@ -11,3 +11,4 @@ We considered a few different resources:
 5. (I'm adding this one) [Software Design by Example](https://third-bit.com/sdxpy/)
 6. (I'm adding this one) [Programming with Python](http://bilal-qudah.com/mm/Programming%20Python%20Fourth%20Edition.pdf)
 7. (I'm adding this one) [Python Koans](https://github.com/gregmalcolm/python_koans)
+8. (I'm adding this one) [Python Crash Course](https://khwarizmi.org/wp-content/uploads/2021/04/Eric_Matthes_Python_Crash_Course_A_Hands.pdf) 

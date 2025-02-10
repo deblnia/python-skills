@@ -37,5 +37,5 @@ if __name__ == 'main':
 
     # sell function 
     s = demo_stock.sell_shares 
-    s.__func__(s.__self__, 25)
+    s.__func__(s.__self__, 5)
     print(s.shares)

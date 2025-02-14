@@ -1,34 +1,4 @@
 
-class Stock:
-    _types = (str, int, float)
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
-
-    def cost(self):
-        return self.shares * self.price
-    def sell_shares(self, n:int):
-        self.shares -= n
-
-    @classmethod
-    def from_row(cls, row):
-        values = [func(val) for func, val in zip(cls._types, row)]
-        return cls(*values)
-
-def read_csv_as_instances(filename, cls):
-    '''
-    Read a CSV file into a list of instances
-    '''
-    import csv
-    records = []
-    with open(filename) as f:
-        rows = csv.reader(f)
-        headers = next(rows)
-        for row in rows:
-            records.append(cls.from_row(row))
-    return records
-
 class TableFormatter:
     def headings(self, headers):
         raise NotImplementedError()
